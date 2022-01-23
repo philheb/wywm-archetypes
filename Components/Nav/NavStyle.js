@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const NavStyle = styled.div`
-margin: auto;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,19 +20,20 @@ margin: auto;
     animation: jiggle 1s ease-in infinite;
   }
   @keyframes jiggle {
-  0%, 66% {
-    transform: scale(1.0, 1.0)
+    0%,
+    66% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.2, 0.8);
+    }
+    56% {
+      transform: scale(0.8, 1.2) translate(0, -5px);
+    }
+    59% {
+      transform: scale(1, 1) translate(0, -3px);
+    }
   }
-  50% {
-    transform: scale(1.2, 0.8)
-  }
-  56% {
-    transform: scale(0.8, 1.2) translate(0, -5px)
-  }
-  59% {
-    transform: scale(1.0, 1.0) translate(0, -3px)
-  }
-}
 `;
 
-export default NavStyle
+export default NavStyle;

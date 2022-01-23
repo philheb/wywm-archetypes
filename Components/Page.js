@@ -3,23 +3,27 @@ import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
 
 const theme = {
   bg: '#102A43',
+  primary: "#27AB83",
+  primaryLight: "#65D6AD",
+  neutral: "#D9E2EC"
 };
 
 const GlobalStyle = createGlobalStyle`
   html {
     box-sizing: border-box;
-    /* font-size: 10px; */
   }
   *, *:before, *:after {
     box-sizing: inherit;
   }
   body {
+    height: 100vh;
     padding: 0;
-    margin: 0;
-    /* font-size: 1.5rem; */
-    /* line-height: 2; */
+    margin: 0 0 60px 0;
     font-family: "Lato", "proxima-nova", Arial, Helvetica, sans-serif !important;
     background-color: ${theme.bg};
+    background-image: url("./background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   a {
     text-decoration: none;
