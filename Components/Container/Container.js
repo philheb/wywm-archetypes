@@ -14,14 +14,14 @@ const Container = () => {
       <div className='title'>
         <h2>Find you Archetype!</h2>
       </div>
-      {/* <Form/> */}
+      <Form/>
       {/* <Conscientious /> */}
       {/* <Openness /> */}
       {/* <Agreeable /> */}
       {/* <Extraversion /> */}
       {/* <Creative /> */}
       {/* <Doer /> */}
-      <Translator />
+      {/* <Translator /> */}
       <div className='img-container'>
         <img
           src='./fire-line.png'
