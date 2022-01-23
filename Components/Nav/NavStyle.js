@@ -8,7 +8,7 @@ const NavStyle = styled.div`
   padding: 20px 30px;
   width: 100%;
   max-width: 1500px;
-  background-color: ${props => props.theme.bg};
+  /* background-color: ${props => props.theme.bg}; */
   .nav-brand:hover {
     cursor: pointer;
   }
